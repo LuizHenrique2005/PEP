@@ -15,7 +15,7 @@ export default function PacientePagina() {
     const pacienteId = parseInt(id);
     obterPacienteId(pacienteId)
       .then((resposta) =>
-        setPaciente(resposta)
+        setPaciente(resposta[0])
       )
       .catch((erro) => console.log(erro));
   };
